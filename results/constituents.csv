@@ -1,0 +1,9 @@
+ticker,company,target_weight_pct
+CME,CME Group,12.5
+ICE,Intercontinental Exchange,12.5
+NDAQ,Nasdaq Inc.,12.5
+CBOE,Cboe Global Markets,12.5
+SPGI,S&P Global Inc.,12.5
+MSCI,MSCI Inc.,12.5
+FDS,FactSet Research Systems,12.5
+MORN,Morningstar Inc.,12.5
