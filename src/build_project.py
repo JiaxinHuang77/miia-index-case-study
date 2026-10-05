@@ -60,18 +60,18 @@ BASE_DATE  = "2021-01-04"   # first business day of 2021
 END_DATE   = date.today().isoformat()
 BASE_VALUE = 100.0
 
-# Paths (relative to this script's directory)
-ROOT        = Path(__file__).parent
+# Paths — ROOT is the repo root (one level above src/)
+ROOT        = Path(__file__).resolve().parents[1]
 DATA_DIR    = ROOT / "data"
 RESULTS_DIR = ROOT / "results"
-PDF_DIR     = ROOT / "output" / "pdf"
+PDF_DIR     = ROOT / "docs"
 
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 PDF_DIR.mkdir(parents=True, exist_ok=True)
 
 CACHE_FILE  = DATA_DIR / "adjusted_close.csv"
-PDF_OUT     = PDF_DIR  / "Jiaxin_Huang_MIIA_Index_Project.pdf"
+PDF_OUT     = PDF_DIR  / "MIIA_Index_Project.pdf"
 
 
 # ─────────────────────────────────────────────────────────────────────────────

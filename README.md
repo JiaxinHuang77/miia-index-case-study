@@ -9,14 +9,14 @@ Base 100 · 4 January 2021 → 2 October 2026 · Benchmark: SPDR S&P 500 ETF (SP
 
 ## Overview
 
-The **MIIA Index** tracks eight US-listed companies that form the backbone of global capital markets — exchanges, clearinghouses, index providers, and financial data firms. This repository provides a fully reproducible, end-to-end index build pipeline: from raw price data acquisition through index computation, performance analytics, and a client-style PDF factsheet.
+The **MIIA Index** tracks eight US-listed companies that form the backbone of global capital markets — exchanges, clearinghouses, index providers, and financial data firms. This repository provides a reproducible educational index build workflow: from raw price data acquisition through index computation, performance analytics, and a client-style PDF factsheet.
 
 The project demonstrates core competencies relevant to index product development:
 - Index methodology design (universe, weighting, rebalancing)
 - Automated data quality controls
 - Daily index level and weight simulation
-- Performance attribution vs. a broad-market benchmark
-- Automated institutional-grade PDF report generation
+- Performance and risk comparison against a broad-market benchmark
+- Automated two-page PDF factsheet generation
 
 ---
 
@@ -71,7 +71,7 @@ Eight US-listed market infrastructure companies, each at a **12.5% target weight
 | Tracking Error vs SPY     |  15.92%    |       —         |
 | Information Ratio         |  −0.430    |       —         |
 
-> **Interpretation:** MIIA underperformed SPY over this period largely due to SPGI, MSCI, and FDS experiencing multiple compression in a rising-rate environment (2022–2023). The index's higher tracking error (15.9%) reflects concentrated thematic exposure rather than broad-market replication, consistent with its intended use as a thematic benchmark.
+> **Interpretation:** MIIA underperformed SPY over the backtest period while exhibiting higher volatility and drawdown. This is consistent with the concentrated exposure of a thematic basket compared with a diversified broad-market benchmark. The current prototype does not include formal performance attribution or valuation analysis, so no causal conclusion is drawn.
 
 ---
 

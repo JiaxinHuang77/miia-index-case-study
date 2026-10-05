@@ -57,11 +57,15 @@ simple to explain and audit.
 
 ## 4. Review Schedule
 
-| Review type      | Frequency | Date convention                        |
-|------------------|-----------|----------------------------------------|
-| Composition      | Quarterly | First business day of Jan, Apr, Jul, Oct |
-| Rebalance        | Quarterly | Same as composition review             |
-| Extraordinary    | Ad hoc    | Corporate events (merger, delisting)   |
+| Review type        | Frequency             | Date convention                              |
+|--------------------|-----------------------|----------------------------------------------|
+| Composition        | Fixed for prototype   | No historical additions or deletions         |
+| Weight rebalance   | Quarterly             | First business day of Jan, Apr, Jul, and Oct |
+| Extraordinary events | Not implemented     | Requires explicit production rules           |
+
+The prototype performs **quarterly weight rebalancing only**. Historical constituent
+reconstitution is not implemented because point-in-time classification, market-capitalisation,
+and liquidity data are unavailable.
 
 At each rebalance the portfolio weights are reset to 1/N. Between rebalances weights drift with
 price performance.
